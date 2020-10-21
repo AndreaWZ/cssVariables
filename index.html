@@ -5,27 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" ></script>
-    <title>Updating CSS</title>
+    <title>Updating Image with JS</title>
 </head>
 <body>
-    <h1>Updating Image with CSS</h1>
+    <h1>Updating Image with JS</h1>
     <div class="style">
         <form id="spacing">
             <div class="text">Spacing:</div>
-            <input type="range" min="1" max="100" value="0">
+            <input id="borderSizes" type="range" min="15" max="200" value="0">
         </form>
         <form id="blur">
             <div class="text">Blur:</div>
-            <input id="blurred" type="range" min="0" max="5" value="0">
+            <input id="blurred" type="range" min="0" max="10" value="3">
         </form>
         <form id="color">
             <div class="text">Base Color:</div>
-            <input id="colors" type="color" name="selectColor" value="#FFFF33">
+            <input id="colors" type="color" name="selectColor" value="#ad3286">
         </form>
     </div>
     <div id="image">
         <img
-            id="flowerImage" 
+            id="flowerImg"
             src="https://images.unsplash.com/photo-1464820453369-31d2c0b651af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80" 
             alt="flower" 
         />
