@@ -6,7 +6,7 @@ window.onload = function(){
 function changeColor(){
     let image = document.getElementById('image');
     let selectColor = document.getElementById('colors');
-    selectColor.addEventListener("click", function(){
+    selectColor.addEventListener("change", function(){
         console.log(selectColor.value);
     });
     // console.log(selectColor);
