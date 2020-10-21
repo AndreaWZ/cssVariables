@@ -7,17 +7,15 @@ function changeColor(){
     let image = document.getElementById('image');
     let selectColor = document.getElementById('colors');
     selectColor.addEventListener("change", function(){
-        console.log(selectColor.value);
+        image.style.backgroundColor = selectColor.value;
     });
-    // console.log(selectColor);
 };
 
 function blurImage(){
-    let image = document.getElementsByTagName("img");
+    let image = document.getElementById("flowerImage");
     let blurred = document.getElementById("blurred");
     blurred.addEventListener("click", function(){
-        console.log(blurred.value);
-        // image.style.filter = "blur(" + blurred.value + "px)";
+        image.style.filter = "blur(" + Number(blurred.value) + "px)";
     });
 };
 
