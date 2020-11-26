@@ -11,8 +11,14 @@ function changeImageBorder(){
     selectColor.addEventListener("change", function(){
         flowerImg.style.border = Number(borderSizes.value) + "px solid " + selectColor.value;
     });
+    selectColor.addEventListener("mousemove", function(){
+        flowerImg.style.border = Number(borderSizes.value) + "px solid " + selectColor.value;
+    });
     borderSizes.addEventListener("click", function(){
         flowerImg.style.border = Number(borderSizes.value) + "px solid" + selectColor.value;
+    });
+    borderSizes.addEventListener("mousemove", function(){
+        flowerImg.style.border = Number(borderSizes.value) + "px solid " + selectColor.value;
     });
 };
 
